@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: white;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+        .items{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            border: 2px solid rgb(135, 245, 10);
+        }
+        #RX:hover{
+            transform: rotateX('45deg');
+        }
+        #RY:hover{
+            transform: rotateY('45deg');
+        }
+        #RZ:hover{
+            transform: rotateZ('45deg');
+        }
+        #TX:hover{
+            transform: translateX(-100px);
+        }
+        #TY:hover{
+            transform: translateY(100px);
+        }
+        #TZ:hover{
+            transform:prospective (300px) translateZ(100px);
+        }
+        #SX:hover{
+            transform: scaleX(1.5);
+            transform: skewX(45deg);
+        }
+        #SY:hover{
+            transform: scaleY(1.5);
+        }
+        #SZ:hover{
+            transform:  prospective(300px) scaleZ(1.5) rotateZ(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="RX">RotateX</div>
+        <div class="items" id="RY">RotateY</div>
+        <div class="items" id="RZ">RotateZ</div>
+        <div class="items" id="TX">TranslateX</div>
+        <div class="items" id="TY">TranslateY</div>
+        <div class="items" id="TZ">TranslateZ</div>
+        <div class="items" id="SX">ScaleX</div>
+        <div class="items" id="SY">ScaleY</div>
+        <div class="items" id="SZ">ScaleZ</div>
+    </div>
+</body>
+</html>

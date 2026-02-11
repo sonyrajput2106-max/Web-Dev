@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=6px, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .container{
+            width: 200vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid  black;
+        }
+        .box{
+            width: 350px;
+            height: 100px;
+            background-color: blue;
+            border: 5px solid red;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box"></div>
+    </div>
+</body>
+</html>

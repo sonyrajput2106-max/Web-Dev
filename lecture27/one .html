@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+        .box{
+            height: 650px;
+            width: 300px;
+            background-color: white;
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+           border-radius: 15px;
+           gap: 25px;
+        }
+        .box img{
+            height: 37%;
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 70%;
+            text-align: center;
+        }
+        #amountbox{
+            width: 80%;
+            height: 10%;
+            border-radius: 10px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+        }
+        #leftbox{
+width: fit-content;
+display: flex;
+gap: 15px;
+        }
+
+        #leftbox img{
+            height:50px;
+            width: 40px;
+            border-radius: 0%;;
+            ;
+        }
+
+      
+
+        #paymentButton{
+            width: 80%;
+            height: 9%;
+            background-color: rgb(51, 6, 142);
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .cancelbox a{
+            text-decoration: none;
+            color: darkgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+<img src="tech.jpg" alt="image">
+
+<div class="textbox">
+<h2>Order Summary</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veniam dolores soluta eveniet ut sequi perferendis architecto corporis qui provident?</p>
+</div>
+
+<div id="amountbox">
+<div id="leftbox">
+    <div id="box1">
+        <img src="one.jpg" alt="">
+
+    </div>
+    <div id="box2">
+        <p>Annual Plan</p>
+        <p>$399/Year</p>
+    </div>
+
+</div>
+
+<div id="rightbox">
+    <a href="#">Change</a>
+</div>
+</div>
+<button id="paymentButton">
+Proceed To Payment
+</button>
+
+<div class="cancelbox">
+    <a href="#">Cancel Order</a>
+</div>
+
+</div>
+    </div>
+</body>
+</html>
