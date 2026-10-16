@@ -15,7 +15,6 @@
 
 
 
-
 //  using let and const variable
 // hoisting is not possible 
 
